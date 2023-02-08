@@ -14,11 +14,11 @@ export default {
   },
   mounted() {
     const commentConfig = {
-      clientID: "",
-      clientSecret: "",
-      repo: "",
-      owner: "",
-      admin: [""],
+      clientID: "c9b86ee0eee6f4bcabb3",
+      clientSecret: "8cf518f73031e3afdda14d100c9a46c70b749968",
+      repo: "blog_vitepress",
+      owner: "ys3322",
+      admin: ["ys3322"],
       id: md5(location.pathname),
       distractionFreeMode: false,
     }

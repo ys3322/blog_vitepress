@@ -1,7 +1,7 @@
-import { defineConfig } from "vitepress"
-import { version } from "../../package.json"
+import { defineConfig } from "vitepress";
+import { version } from "../../package.json";
 
-const currentVersion = `v${version}`
+const currentVersion = `v${version}`;
 
 export default defineConfig({
   base: "/blog_vitepress/",
@@ -21,10 +21,13 @@ export default defineConfig({
     },
     footer: {
       message: "Released under the MIT License.",
-      copyright: `Copyright © 2022.4-${new Date().getFullYear()}.${new Date().getMonth() + 1}`,
+      copyright: `Copyright © 2022.4-${new Date().getFullYear()}.${
+        new Date().getMonth() + 1
+      }`,
     },
     editLink: {
-      pattern: "https://github.com/ys3322/blog_vitepress/edit/master/blog/:path",
+      pattern:
+        "https://github.com/ys3322/blog_vitepress/edit/master/blog/:path",
       text: "Edit this page on GitHub",
     },
     socialLinks: [
@@ -35,44 +38,13 @@ export default defineConfig({
     ],
     nav: [
       {
-        text: "安装",
+        text: "起步",
         link: "/guide/start",
         activeMatch: "/guide/start",
       },
       {
-        text: "指南",
-        items: [
-          {
-            text: "一键格式化与保存",
-            link: "/guide/formatAndSave",
-            activeMatch: "/guide/formatAndSave",
-          },
-          {
-            text: "嵌套注释",
-            link: "/guide/powerfulComment",
-            activeMatch: "/guide/powerfulComment",
-          },
-          {
-            text: "快速选中双引号区域",
-            link: "/guide/jumpQuote",
-            activeMatch: "/guide/jumpQuote",
-          },
-          {
-            text: "生成块注释/** */",
-            link: "/guide/blockComment",
-            activeMatch: "/guide/blockComment",
-          },
-          {
-            text: "使用vscode打开所在目录(待完善)",
-            link: "/guide/openWithVscode",
-            activeMatch: "/guide/openWithVscode",
-          },
-          {
-            text: "vue文件双分栏模式且自动折叠",
-            link: "/guide/copyEditor",
-            activeMatch: "/guide/copyEditor",
-          },
-        ],
+        text: "推荐",
+        items: [],
       },
       {
         text: currentVersion,
@@ -90,56 +62,56 @@ export default defineConfig({
         ],
       },
     ],
-    sidebar: {
-      "/": [
-        {
-          text: "起步",
-          items: [
-            {
-              text: "安装",
-              link: "/guide/start",
-            },
-          ],
-        },
-        {
-          text: "功能",
-          items: [
-            {
-              text: "一键格式化与保存",
-              link: "/guide/formatAndSave",
-            },
-            {
-              text: "嵌套注释",
-              link: "/guide/powerfulComment",
-            },
-            {
-              text: "快速选中双引号区域",
-              link: "/guide/jumpQuote",
-            },
-            {
-              text: "生成块注释/** */",
-              link: "/guide/blockComment",
-            },
-            {
-              text: "使用vscode打开所在目录(待完善)",
-              link: "/guide/openWithVscode",
-            },
-            {
-              text: "vue文件双分栏模式且自动折叠",
-              link: "/guide/copyEditor",
-            },
-          ],
-        },
-        {
-          text: "更新",
-          items: [
-            {
-              text: "版本说明",
-              link: "/update/versions",
-            },
-          ],
-        },
-      ],
-    },
+    // sidebar: {
+    //   "/": [
+    //     {
+    //       text: "起步",
+    //       items: [
+    //         {
+    //           text: "安装",
+    //           link: "/guide/start",
+    //         },
+    //       ],
+    //     },
+    //     {
+    //       text: "功能",
+    //       items: [
+    //         {
+    //           text: "一键格式化与保存",
+    //           link: "/guide/formatAndSave",
+    //         },
+    //         {
+    //           text: "嵌套注释",
+    //           link: "/guide/powerfulComment",
+    //         },
+    //         {
+    //           text: "快速选中双引号区域",
+    //           link: "/guide/jumpQuote",
+    //         },
+    //         {
+    //           text: "生成块注释/** */",
+    //           link: "/guide/blockComment",
+    //         },
+    //         {
+    //           text: "使用vscode打开所在目录(待完善)",
+    //           link: "/guide/openWithVscode",
+    //         },
+    //         {
+    //           text: "vue文件双分栏模式且自动折叠",
+    //           link: "/guide/copyEditor",
+    //         },
+    //       ],
+    //     },
+    //     {
+    //       text: "更新",
+    //       items: [
+    //         {
+    //           text: "版本说明",
+    //           link: "/update/versions",
+    //         },
+    //       ],
+    //     },
+    //   ],
+    // },
   },
-})
+});
