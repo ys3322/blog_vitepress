@@ -4,10 +4,10 @@ import { version } from "../../package.json"
 const currentVersion = `v${version}`
 
 export default defineConfig({
-  base: "/formatAndSave/",
-  title: "formatAndSave",
-  description: "HBuilderX插件-主要功能：嵌套注释、vue文件双分栏并自动折叠",
-  head: [["link", { rel: "icon", href: "/formatAndSave/favicon.ico" }]],
+  base: "/blog_vitepress/",
+  title: "yangs_blog",
+  description: "随笔记录",
+  head: [["link", { rel: "icon", href: "/blog_vitepress/favicon.ico" }]],
   lastUpdated: true,
   markdown: {
     lineNumbers: true,
@@ -24,13 +24,13 @@ export default defineConfig({
       copyright: `Copyright © 2022.4-${new Date().getFullYear()}.${new Date().getMonth() + 1}`,
     },
     editLink: {
-      pattern: "https://github.com/zqy233/formatAndSave/edit/master/blog/:path",
+      pattern: "https://github.com/ys3322/blog_vitepress/edit/master/blog/:path",
       text: "Edit this page on GitHub",
     },
     socialLinks: [
       {
         icon: "github",
-        link: "https://github.com/zqy233/formatAndSave",
+        link: "https://github.com/ys3322/blog_vitepress",
       },
     ],
     nav: [

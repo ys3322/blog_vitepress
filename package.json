@@ -1,6 +1,7 @@
 {
   "id": "",
   "description": "",
+  "version": "0.0.1",
   "scripts": {
     "docs": "vitepress dev docs --temp",
     "docs:build": "vitepress build docs",

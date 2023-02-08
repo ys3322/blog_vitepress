@@ -14,11 +14,11 @@ export default {
   },
   mounted() {
     const commentConfig = {
-      clientID: "78686285d8658a54cb56",
-      clientSecret: "f043ca435bfd63ce0b5a204fe56c008acd6c06f3",
-      repo: "formatAndSave",
-      owner: "zqy233",
-      admin: ["zqy233"],
+      clientID: "",
+      clientSecret: "",
+      repo: "",
+      owner: "",
+      admin: [""],
       id: md5(location.pathname),
       distractionFreeMode: false,
     }
